@@ -74,7 +74,7 @@ body {
 
 #ctaButton:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #ctaButton.clicked {
@@ -89,7 +89,7 @@ body {
     left: 50%;
     width: 0;
     height: 0;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
@@ -246,7 +246,7 @@ body {
     color: var(--primary-color);
 }
 
-.faq-question.active + .faq-answer {
+.faq-question.active+.faq-answer {
     display: block;
     background-color: white;
     border-bottom-left-radius: 10px;
@@ -331,7 +331,7 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero p {
         font-size: 1rem;
     }
@@ -343,8 +343,15 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .video-container {
@@ -427,73 +434,80 @@ footer {
 }
 
 @keyframes sectionHighlight {
-    0% { background-color: rgba(254, 44, 85, 0.1); }
-    100% { background-color: transparent; }
+    0% {
+        background-color: rgba(254, 44, 85, 0.1);
+    }
+
+    100% {
+        background-color: transparent;
+    }
 }
 
 /* Novos estilos para cards de recursos */
-        .resource-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            height: 100%;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .resource-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .resource-icon {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            color: white;
-            margin: 0 auto 1.5rem;
-        }
-        
-        .bg-purple {
-            background-color: #6f42c1 !important;
-        }
-        .hover-opacity {
-            transition: opacity 0.3s ease;
-        }
-        .hover-opacity:hover {
-            opacity: 0.9;
-        }
+.resource-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
-        .bg-orange-gradient {
-            background: linear-gradient(45deg, #ff6b35, #ff8c42);
-        }
-        
-        .text-orange {
-            color: #ff6b35 !important;
-        }
-        
-        .demo-box {
-            transition: transform 0.3s ease;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .demo-box:hover {
-            transform: translateY(-5px);
-        }
-        
-        .btn-danger {
-            background-color: #dc3545;
-            border-color: #dc3545;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-danger:hover {
-            background-color: #bb2d3b;
-            border-color: #b02a37;
-        }
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 auto 1.5rem;
+}
+
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.hover-opacity {
+    transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+    opacity: 0.9;
+}
+
+.bg-orange-gradient {
+    background: linear-gradient(45deg, #ff6b35, #ff8c42);
+}
+
+.text-orange {
+    color: #ff6b35 !important;
+}
+
+.demo-box {
+    transition: transform 0.3s ease;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.demo-box:hover {
+    transform: translateY(-5px);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}

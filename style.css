@@ -468,3 +468,32 @@ footer {
         .hover-opacity:hover {
             opacity: 0.9;
         }
+
+        .bg-orange-gradient {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+        }
+        
+        .text-orange {
+            color: #ff6b35 !important;
+        }
+        
+        .demo-box {
+            transition: transform 0.3s ease;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .demo-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-danger:hover {
+            background-color: #bb2d3b;
+            border-color: #b02a37;
+        }
